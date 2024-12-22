@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutu ka Birthday ❤️</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Heyyooo Babuuuu,</strong>
+                        <p>
+                            Happyyyyyyyyyyyyyyyyyyyyyyyyyyy Birthhhhhhhdayyyyyyyyyyyyyyyyy meriiiiiii jaaaaan ❤️❤️😘😘. Welcome to Your 20's 😂 ab meraaa baccha offiiciallyy Bada ho gayaa 😋. Maiiii tumsee bhauttt pyaarr kartaa 😘❤️❤️. Aur hameshaaa karungaaaa 😁. maiii bass tumharaa huu aurr tumm mereee. Kabhii bhii kuch bhii baat ho mujheee aakee batayaa karoo 😠 samjheee maii hameshaa tumhara sathh dunga gaddhu, Aajj ka dinn sirff tumharaa haii 😉🤞. Tummm jooo bologeee woh humm karengee. The bas adesh do mai thari sewa mein hazir hujya 😋.
+                        </p>
+                        <!-- Clickable button -->
+                        <button class="redirect-button">Click Here</button>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        // Select the envelope wrapper
+        const envelope = document.querySelector('.envelope-wrapper');
+
+        // Toggle the flap on the envelope when clicked
+        envelope.addEventListener('click', (e) => {
+            envelope.classList.toggle('flap');
+        });
+
+        // Prevent the envelope from toggling when the button is clicked
+        const redirectButton = document.querySelector('.redirect-button');
+        redirectButton.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent the click from reaching the envelope
+            window.location.href = 'letter.html'; // Redirect to the target page
+        });
+    </script>
+</body>
+</html>
